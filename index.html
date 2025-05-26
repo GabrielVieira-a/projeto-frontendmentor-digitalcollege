@@ -7,20 +7,9 @@
     <title>Ecommerce</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         @theme {
-            --color-laranja:hsl(26, 100%, 55%);
+            --color-laranja: hsl(26, 100%, 55%);
             --color-laranja-claro: hsl(25, 100%, 94%);
             --color-cinza-escuro: hsl(219, 9%, 45%);
         }
@@ -37,36 +26,52 @@
 
 
     <main>
-        
-        <section class="flex gap-70 items-center">
-            <div>
-                <img src="./image-product-1.jpg" alt="sapato">
-            </div>
-    <div class="flex flex-col gap-5">
-        <h5 class="font-bold text-gray-400">SNEAKER COMPANY</h5>
-        <h1 class="text-3xl mt-5 font-bold whitespace-pre text-[32px]">Fall Limited Edition 
-Sneakers</h1>
-        <p class="mt-8 w-110 text-[15px] text-gray-500">These low-profile sneakrs are your perfect casual wear companion. Featuring a durable rubber outer sole,
-            they'll wihtstand everything the weather can offer.</p>
-            <div class="flex gap-3 flex-col">
-                <div>
-                       <span class=" pr-3 font-bold text-[25px]">$ 125.00</span>
-            <span class="bg-black text-white px-5 rounded">50%</span>
+
+        <section class="h-screen flex gap-[100px] items-center border border-black">
+            <div class="flex-1 flex justify-end border border-black">
+                <div class="w-[350px] ">
+                    <img class="rounded-xl" src="./image-product-1.jpg" alt="sapato">
+                    <div class="w-full grid grid-cols-4 mt-6 gap-6 ">
+                        <img src="./image-product-1.jpg" alt="sapato">
+                        <img src="./image-product-1.jpg" alt="sapato">
+                        <img src="./image-product-1.jpg" alt="sapato">
+                        <img src="./image-product-1.jpg" alt="sapato">
+                    </div>
                 </div>
-            <p class="desconto line-through text-gray-500 font-bold">$ 250.00</p>
             </div>
-            <div class="flex items-center">
-                <div class="flex gap-3 items-center">
-                    <span class="mr-3 text-orange-400 font-bold text-[25px]">-</span>
-                    <span>0</span>
-                    <span class="ml-3 text-orange-400 font-bold text-[25px]">+</span>
-                    <div class="ml-25">
-                    <button class="flex bg-orange-500 pl-10 pr-10"><img src="./icon-cart.svg" alt=""> Add to cart</button>
-
+            <div class="flex-1 border border-black">
+                <div class="w-[400px]">
+                    <h5 class="font-bold text-gray-400">SNEAKER COMPANY</h5>
+                    <h1 class="text-3xl mt-5 font-bold text-[32px]">Fall Limited Edition Sneakers</h1>
+                    <p class="mt-8 text-[15px] text-gray-500">These low-profile sneakrs are your perfect casual
+                        wear
+                        companion. Featuring a durable rubber outer sole,
+                        they'll wihtstand everything the weather can offer.</p>
+                    <div class="flex gap-3 flex-col mb-5">
+                        <div class="mt-5">
+                            <span class=" pr-3 font-bold text-[25px]">$ 125.00</span>
+                            <span class="bg-black text-white px-5 rounded">50%</span>
+                        </div>
+                        <p class="desconto line-through text-gray-500 font-bold font-">$ 250.00</p>
+                    </div>
+                    <div>
+                        <div class="flex gap-3 justify-between items-center">
+                            <div class="font-bold bg-[#F6F8FC] px-8 justify-center gap-6">
+                                <span class="mr-3 text-orange-400 font-bold text-[25px]">-</span>
+                                <span>0</span>
+                                <span class="ml-3 text-orange-400 font-bold text-[25px]">+</span>
+                            </div>
+                            <div class="font-bold">
+                                <button class="flex bg-orange-500 pl-10 pr-10">
+                                    <img src="./icon-cart.svg" alt="">
+                                    Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-    </div>
-    </section>
+        </section>
 
     </main>
 </body>
